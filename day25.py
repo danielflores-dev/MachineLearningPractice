@@ -57,4 +57,4 @@ with torch.no_grad():
     predictions = model(X_test).numpy()
 
 print("MAE:", mean_absolute_error(y_test.numpy(), predictions))
-print(df.select_dtypes(include="number").columns.tolist())
+print(df.columns.tolist())
